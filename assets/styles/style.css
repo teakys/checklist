@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --background-color: rgb(170, 192, 239);
+    --contrast: rgb(227, 213, 162);
+    --button: #6c63ff;
+    --dark-gray:rgb(70, 69, 69);
+    --light-gray: rgb(98, 95, 95);
+    --white: #FFFFFF;
+    --main-font-family: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--main-font-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    background-color: var(--white);
+    padding: 3em;
+    row-gap: 2em;
+    border-radius: .5em;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212) ;
+    width: 20vw;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    row-gap: 1em;
+    align-items: center;
+}
+
+.main-input {
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: .5em;
+    width: 100%;
+    border: none;
+    background-color:rgba(0, 0, 0, .02);
+    box-shadow: 1px 1px 6px #00000030 ;
+}
+
+.main-input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.main-input:hover {
+    background-color: #eeeeee75;
+}
+
+.main-button {
+    background-color: var(--button);
+    color: var(--white);
+    border: none;
+    padding: 1em;
+    border-radius: 1em;
+    width: fit-content;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: .9em;
+}
+
+.main-button:hover {
+    background-color: #6b63fff1;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    background-color: #6c63ff;
+    width: 5rem;
+    height: 0.3rem;
+    border-radius: 1rem;
+}
+
+.list-line {
+     3px dotted var(--button);
+    margin
+}
+
+.list {
+    list-style-type: none;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-info {
+    display: flex;
+    column-gap: 1em;
+}
+
+.label {
+    color: var(--dark-gray);
+    
+}
+
+.list-action {
+    ;
+}
