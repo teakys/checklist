@@ -29,13 +29,13 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: auto;
     background-color: var(--white);
     padding: 3em;
     row-gap: 2em;
     border-radius: .5em;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212) ;
-    width: 20vw;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+    width: 500px;
 }
 
 .sub-container {
@@ -63,7 +63,7 @@ body {
 }
 
 .main-input:hover {
-    background-color: #eeeeee75;
+    background-color:rgba(0, 0, 0, .05);
 }
 
 .main-button {
@@ -99,16 +99,20 @@ body {
     border-radius: 1rem;
 }
 
-.list-line {
-     3px dotted var(--button);
-    margin
-}
-
 .list {
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: .5em;
 }
 
 .list-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5em;
+}
+
+.list-container {
     display: flex;
     justify-content: space-between;
 }
@@ -120,9 +124,62 @@ body {
 
 .label {
     color: var(--dark-gray);
-    
+    font-size: 1em;
 }
 
 .list-action {
-    ;
+    display: flex;
+    column-gap: 1em;
 }
+
+
+
+.checkbox-wrapper {
+    display: flex;
+    column-gap: .5em;
+}
+
+.checkbox-input{
+    display: none;
+}
+
+.checkbox-custom {
+    background-color: var(--white);
+    border: 1px solid var(--button);
+    width: 20px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+
+.checked {
+    background-color: var(--button);
+    position: relative;
+}
+
+.checked::after {
+    content: '';
+    position: absolute;
+    top: 8%;
+    left: 35%;
+    height: 10px;
+    width: 5px;
+    border-left: 1px solid var(--white);
+    border-top: 1px solid var(--white);
+    transform: rotate(-140deg);
+}
+
+.button-action {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.checkbox-info {
+    color: var(--light-gray);
+    font-size: 14px;
+    margin-bottom: 1em;
+}
+

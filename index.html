@@ -13,51 +13,34 @@
 
         <div class="sub-container main">
             <img src="./assets/images/paper bag with groceries 1.svg" alt="sacola cheia de compras" class="icon">
-            <input class="main-input" type="text" placeholder="Digite o item que deseja adicionar">
-            <button class="main-button">Salvar item</button>
+            <input id="main-input" class="main-input" type="text" placeholder="Digite o item que deseja adicionar">
+            <button id="add-item" class="main-button">Salvar item</button>
         </div>
         <div class="sub-container buy-list">
             <h2 class="list-title title">Lista de Compras</h2>
-            <ul class="list">
+            <ul id="list" class="list">
                 <li class="list-item">
-                    <div class="list-info">
-                        <input id="checkbox-1" class="checkbox" type="checkbox">
-                        <label for="checkbox-1" class="label">Queijo Minas</label>
+                    <div class="list-container">
+                        <div class="list-info">
+                            <div class="checkbox-wrapper">
+                                <label for="checkbox-input">
+                                    <input id="checkbox-1" class="checkbox-input" type="checkbox">
+                                    <div class="checkbox-custom checked"></div>
+                                </label>
+                            </div>
+                            <label for="checkbox-input" class="label">Queijo Minas</label>
+                        </div>
+                        
+                        <div class="list-action">
+                            <button class="button-action">
+                                <img src="./assets/images/Excluir.svg" alt="excluir">
+                            </button>
+                            <button class="button-action">
+                                <img src="./assets/images/Edição.svg" alt="editar">
+                            </button>
+                        </div>
                     </div>
-                    <div class="list-action">
-                        <img src="./assets/images/Excluir.svg" alt="excluir">
-                        <img src="./assets/images/Edição.svg" alt="editar">
-                    </div>
-                </li>
-                <li class="list-item">
-                    <div class="list-info">
-                        <input id="checkbox-2" class="checkbox" type="checkbox">
-                        <label for="checkbox-2" class="label">Leite integral</label>
-                    </div>
-                    <div class="list-action">
-                        <img src="./assets/images/Excluir.svg" alt="excluir">
-                        <img src="./assets/images/Edição.svg" alt="editar">
-                    </div>
-                </li>
-                <li class="list-item">
-                    <div class="list-info">
-                        <input id="checkbox-3" class="checkbox" type="checkbox">
-                        <label for="checkbox-3" class="label">Mamão papaia</label>
-                    </div>
-                    <div class="list-action">
-                        <img src="./assets/images/Excluir.svg" alt="excluir">
-                        <img src="./assets/images/Edição.svg" alt="editar">
-                    </div>
-                </li>
-                <li class="list-item">
-                    <div class="list-info">
-                        <input id="checkbox-4" class="checkbox" type="checkbox">
-                        <label for="checkbox-4" class="label">Pão francês</label>
-                    </div>
-                    <div class="list-action">
-                        <img src="./assets/images/Excluir.svg" alt="excluir">
-                        <img src="./assets/images/Edição.svg" alt="editar">
-                    </div>
+                    <p class="checkbox-info">Segunda-feira (31/10/2022) às 08:30</p>
                 </li>
             </ul>
         </div>
@@ -66,6 +49,7 @@
         </div>
 
     </div>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
